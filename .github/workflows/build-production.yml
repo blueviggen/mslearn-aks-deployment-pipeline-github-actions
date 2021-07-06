@@ -17,6 +17,7 @@ jobs:
         # uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         uses: docker/metadata-action@v3.3.0
         with:
+          images: ${{secrets.ACR_NAME}}/contoso-website
           # List of tags as key-value pair attributes
           tags: type=semver,pattern={{raw}}
 
